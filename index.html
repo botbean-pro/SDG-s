@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sustainable Development Goals</title>
+    <style>
+        @font-face {
+        font-family: 'VAG Rounded';
+        src: url('VagRounded.ttf') format('truetype'),
+    }
+        body {
+            font: VAG Rounded;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1750px;
+            margin: 20px auto;
+            padding: 45px;
+            background-color: rgb(71, 177, 238);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .box-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        h1{
+            margin: 0;
+            font-size: 5rem;
+            font-weight: bold; /* Add this line to make the text bold */
+        }
+        .box {
+            background: rgb(71, 177, 238);
+            flex: 1;
+            height: 100px;
+            width: 50px;
+            border-radius: 12px;
+            transition: flex 0.5s ease, background-color 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 10px;
+        }
+
+        /* Images inside the box */
+        .box img{
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            border-radius: 12px;
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        /* Hover Animation */
+        .box:hover {
+            flex: 2;
+            background-color:rgb(51, 121, 161);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Sustainable <br> Development <br> Goals </h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="NoPoverty.html">
+                    <img src="NoPoverty.png" alt="Image 1">
+                </a>
+            </div>
+            <div class="box">
+                <a href="ZeroHunger.html">
+                    <img src="ZeroHunger.png" alt="Image 2">
+                </a>
+            </div>
+            <div class="box">
+                <a href="GoodHealth.html">
+                    <img src="GoodHealth.png" alt="Image 3">
+                </a>
+            </div>
+            <div class="box">
+                <a href="QualityEducation.html">
+                    <img src="QualityEducation.png" alt="Image 4">
+                </a>
+            </div>
+            <div class="box">
+                <a href="GenderEquality.html">
+                    <img src="GenderEquality.png" alt="Image 5">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
