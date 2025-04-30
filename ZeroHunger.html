@@ -42,7 +42,7 @@
             font-weight: bold; /* Add this line to make the text bold */
         }
         p{
-            font-size: 1.2rem;
+            font-size: 1.5rem;
         }
         .box img{
             width: auto;
@@ -53,6 +53,24 @@
             max-height: 100%;
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .vid-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            max-width: 1750px;
+            margin: 20px auto;
+            padding: 45px;
+            background-color: rgb(71, 177, 238);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        video{
+            width: 1000px;
+            height: 563px;
+            border-radius: 12px;
+            padding: 100px;
+            
         }
 
         /* Hover Animation */
@@ -89,5 +107,9 @@
         </div>
 </div>
 <a href="index.html" class="back-button">Back</a>
+<div class="vid-container">
+    <video width="auto" height="auto" controls>
+        <source src="ZeroHunger.mp4" type="video/mp4"> </video>
+    <img src="ZeroHunger2.png"> </div> 
 </body>
 </html>
