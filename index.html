@@ -16,8 +16,11 @@
             background-color: #f4f4f9;
             color: #333;
             text-align: center;
+            font: "Garamond", serif;
         }
         .container {
+            position: relative;
+            z-index: 1;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -28,6 +31,28 @@
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        .background-scroll {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 100%;
+        background: url('ScrollBackground.png') repeat-x;
+        background-size: cover;
+        background-repeat: repeat-x;
+        animation: scrollBackground 30s linear infinite;
+        z-index: -1;
+}
+
+    @keyframes scrollBackground {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
         .box-container {
             display: flex;
             flex-direction: row;
@@ -75,6 +100,7 @@
     </style>
 </head>
 <body>
+    <div class="background-scroll"></div>
     <div class="container">
         <h1> Sustainable <br> Development <br> Goals </h1>
         <div class="box-container">
