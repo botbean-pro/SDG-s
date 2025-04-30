@@ -6,8 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sustainable Development Goals</title>
     <style>
+        @font-face {
+            font-family: 'VAG Rounded';
+            src: url('VagRounded.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
         body {
-            font-family: 'Playfair Display', serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
@@ -36,10 +41,12 @@
             border-radius: 12px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        h1{
+        h1 {
             margin: 0;
             font-size: 5rem;
-            font-weight: bold; /* Add this line to make the text bold */
+            font-weight: 700;
+            font-family: 'VAG Rounded', sans-serif; 
+            color: #ffffff;
         }
         p{
             font-size: 1.5rem;
@@ -80,7 +87,7 @@
         }
         .back-button {
             position: absolute;
-            top: 25px;
+            top: 60px;
             left: 45px;
             padding: 10px 20px;
             background-color: #ff0000;
@@ -90,14 +97,73 @@
             cursor: pointer;
             text-decoration: none;
             font-size: 1rem;
+            font-family: 'VAG Rounded', sans-serif;
         }
 
         .back-button:hover {
             background-color: #df0000;
         }
+        .nav-bar {
+            background-color: #2c3e50;
+            /* Darker background */
+            color: white;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            position: fixed; /* Make it stick to the top */
+            top: 0;
+            left: 0;
+            z-index: 100; /* Ensure it's above other elements */
+        }
+
+        .nav-tabs {
+            list-style: none;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-tabs li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .nav-tabs li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            font-family: 'VAG Rounded', sans-serif;
+            /* Smooth transition */
+        }
+
+        .nav-tabs li a:hover {
+            background-color: #34495e;
+            /* Slightly lighter on hover */
+        }
+
+        .nav-tabs li a.active {
+            background-color: #e74c3c;
+            /* Active tab color */
+        }
     </style>
 </head>
 <body>
+    <nav class="nav-bar">
+        <ul class="nav-tabs">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="NoPoverty.html" class="active">SDG1 - No Poverty</a></li>
+            <li><a href="ZeroHunger.html"> SDG2 - Zero Hunger</a></li>
+            <li><a href="GoodHealth.html">SDG3 - Good Wellbeing</a></li>
+            <li><a href="QualityEducation.html">SDG4 - Quality Education</a></li>
+            <li><a href="GenderEquality.html">SDG5 - Gender Equality</a></li>
+
+        </ul>
+    </nav>
     <div class="container">
         <img src="NoPoverty.png" alt="Image 1">
         <div class="box-container"> 
